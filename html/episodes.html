@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GolFlix - Épisodes</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  <link rel="stylesheet" href="../styles/episodes.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="golflix-title">GOLFLIX</div>
+    <nav class="nav-labels">
+      <a href="index.html">Accueil</a>
+      <a href="#">Séries</a>
+      <a href="#">Films</a>
+      <a href="#">Jeux</a>
+    </nav>
+  </header>
+
+  <main class="episodes-main">
+    <h1 class="episodes-title">Les Épisodes</h1>
+
+    <div class="episode-card" onclick="goToEpisode('episode1.html')">
+      <h2 class="title"> Épisode 1 : Qui suis-je ?</h2>
+      <p>Dans ce premier épisode, je me présente brièvement afin que vous puissiez mieux me connaître.</p>
+    </div>
+
+    <div class="episode-card" onclick="goToEpisode('episode2.html')">
+      <h2 class="title"> Épisode 2 : Le role de la commission communication</h2>
+      <p>Présentation des responsabilités clés de la commission communication, son impact sur l'image du club et pourquoi elle est essentielle au bon fonctionnement de nos projets.</p>
+    </div>
+
+    <div class="episode-card" onclick="goToEpisode('episode3.html')">
+      <h2 class="title"> Épisode 3 : Problèmes & Solutions</h2>
+      <p>Chaque commission rencontre des défis. Dans cet épisode, j'identifie ceux que nous avons affrontés et je propose des solutions pour y répondre. y remédier efficacement.</p>
+    </div>
+    
+    <div class="episode-card" onclick="goToEpisode('episode4.html')">
+      <h2 class="title"> Épisode 4 : Mes objectifs</h2>
+      <p>Je partage ici les objectifs que je me fixe si je deviens cheffe de la commission. Des ambitions réalistes, mais surtout porteuses d'amélioration et d'innovation.</p>
+    </div>
+
+    <div class="episode-card" onclick="goToEpisode('episode5.html')">
+      <h2 class="title"> Épisode 5 : Mon programme</h2>
+      <p>Je détaille ici les projets que je souhaite mettre en place au sein de la commission. Entre initiatives créatives et objectifs stratégiques, ce programme reflète ma vision et mon engagement.</p>
+    </div>
+
+    <div class="episode-card" onclick="goToEpisode('episode6.html')">
+      <h2 class="title"> Épisode 6 : Pourquoi moi ?</h2>
+      <p>Je termine cette série en mettant en avant ce qui me rend unique : mes compétences, mon engagement, ma créativité et ma vision pour faire avancer notre club.</p>
+    </div>
+  </main>
+  <script>
+  function goToEpisode(page) {
+    window.location.href = page;
+  }
+  </script>
+</body>
+</html>

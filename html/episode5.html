@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Épisode 5 - GolFlix</title>
+  <link rel="stylesheet" href="../styles/ep5.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+</head>
+<body>
+  <video id="intro" src="../assets/videos/intro-netflix.mp4" autoplay class="visible" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:100;"></video>
+
+  <div id="content-container">
+
+    <!-- First media group -->
+    <div class="media-group" id="media-group-1" style="display:none; position: relative; max-width: 90vw; margin: auto;">
+      <video id="ep5" src="../assets/videos/ep5.1.mp4" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15);"></video>
+      <img src="../assets/images/ep5.1.jpg" id="ep5-image" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15); display:none;" />
+      <button id="next-step-btn">&#8594</button>
+    </div>
+
+    <!-- Second media group -->
+    <div class="media-group" id="media-group-2" style="display:none; position: relative; max-width: 90vw; margin: auto;">
+      <video id="ep5-2" src="../assets/videos/ep5.2.mp4" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15); display:none;"></video>
+      <img src="../assets/images/ep5.2.jpg" id="ep5-img-2" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15); display:none;" />
+    </div>
+
+  </div>
+
+    <div class="btn-container">
+  <button id="prev-btn" onclick="window.location.href='episode4.html'">Épisode précédant</button>
+  <button id="next1-btn" onclick="window.location.href='episode6.html'">Épisode suivant</button>
+  </div>
+
+
+  <script src="../scripts/ep5.js"></script>
+</body>
+</html>
+
+</html>

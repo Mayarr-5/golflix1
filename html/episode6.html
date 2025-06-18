@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Épisode 6 - GolFlix</title>
+  <link rel="stylesheet" href="../styles/ep6.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+</head>
+<body>
+  <video id="intro" src="../assets/videos/intro-netflix.mp4" autoplay class="visible" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:100;"></video>
+
+  <div id="content-container">
+
+    <!-- First media group -->
+    <div class="media-group" id="media-group-1" style="display:none; position: relative; max-width: 90vw; margin: auto;">
+      <video id="ep6" src="../assets/videos/ep6.1.mp4" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15);"></video>
+      <img src="../assets/images/ep6.1.jpg" id="ep6-image" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15); display:none;" />
+      <button id="next-step-btn">&#8594</button>
+    </div>
+
+    <!-- Second media group -->
+    <div class="media-group" id="media-group-2" style="display:none; position: relative; max-width: 90vw; margin: auto;">
+      <video id="ep6-2" src="../assets/videos/ep6.2.mp4" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15); display:none;"></video>
+      <img src="../assets/images/ep6.2.jpg" id="ep6-img-2" style="width: 100%; border-radius: 12px; box-shadow: 0 0 30px rgba(255,255,255,0.15); display:none;" />
+    </div>
+
+  </div>
+
+    <div class="btn-container">
+  <button id="prev-btn" onclick="window.location.href='episode5.html'">Épisode précédant</button>
+  <button id="next1-btn">Regarder</button>
+
+  <div class="media-group" id="media-group-3" style="display: none; flex-direction: column; align-items: center;">
+  <video id="ep6-end" src="../assets/videos/end.mp4" style="width: 100%; border-radius: 12px;"></video>
+  <img src="../assets/images/outro.jpg" id="ep6-end-img" style="width: 100%; border-radius: 12px; display: none;" />
+  <button id="home-btn" onclick="window.location.href='../html/index.html'">Acceuil</button>
+  </div>
+
+
+  </div>
+
+
+  <script src="../scripts/ep6.js"></script>
+</body>
+</html>
+
+</html>
