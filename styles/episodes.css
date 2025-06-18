@@ -1,0 +1,98 @@
+/* RESET */
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #221f1f;
+  color: #f5f5f1;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  height: 80px;
+  width: 1350px;
+  padding: 0px 40px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 80px;
+  display: flex;
+  background-color: black;
+  color: r#b20710;
+  position: fixed;
+}
+
+.nav-labels {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-labels a {
+ color: #f5f5f1;
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 500;
+  opacity: 0.9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-labels a:hover {
+  color: #b20710;
+  cursor: pointer;
+}
+
+.golflix-title {
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #e50914;
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+}
+
+
+.episodes-main {
+  padding: 120px 40px 40px;
+  background-color:#221f1f;
+  color: #f5f5f1;
+}
+
+.episodes-title {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  font-size: 3rem;
+  color: #e50914;
+  margin-bottom: 40px;
+   letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.episode-card {
+  background-color: #2E2E2E;
+  border-left: 4px solid #b20710;
+  padding: 20px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  padding-left: 25px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+}
+
+.title{
+  padding-bottom: 17px;
+}

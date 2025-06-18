@@ -1,0 +1,155 @@
+body, html {
+  margin: 0;
+  padding-bottom: 0px;
+  padding-top: 2.5px; 
+  background-color: black;
+  display: flex;
+  justify-content: flex-start; /* aligne en haut */
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#intro {
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      border-radius: 0;
+      box-shadow: none;
+}
+
+video, img {
+  display: none;
+  max-width: 98vw;
+  max-height: 98vh;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+.visible {
+  display: block;
+}
+
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 100;
+}
+
+#content-container {
+  position: relative;
+  overflow: visible;
+}
+
+#next-step-btn {
+  position: absolute;
+  top: 50%;
+  right: -27.5px; /* moitié de la largeur du bouton */
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10; /* S’assurer qu’il est au-dessus */
+  transition: all 0.3s ease;
+}
+
+#next-step-btn{
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #b20710;
+  color: white;
+  opacity: 50px;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  /*align-items: center;
+  justify-content: center;*/
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+   line-height: 50px; /* less than height */
+  padding-bottom: 2px;
+}
+
+#next-step-btn:hover {
+  background-color: #b20710;
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.media-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+#ep5-image {
+  max-width: 98vw;
+  max-height: 98vh;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+#next1-btn {
+ display: none;
+ margin-top: 5px;
+ padding: 12px 25px;
+ background-color: #e50914;
+ color: #ffffff;
+ border: none;
+ border-radius: 6px;
+ font-size: 1.1rem;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+
+#next1-btn:hover {
+  background-color: #b20710;
+}
+
+#prev-btn {
+ display: none;
+ margin-top: 5px;
+ padding: 12px 25px;
+ background-color: #e50914;
+ color: #ffffff;
+ border: none;
+ border-radius: 6px;
+ font-size: 1.1rem;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+
+#prev-btn:hover {
+  background-color: #b20710;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 900px; /* espace entre les boutons */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
